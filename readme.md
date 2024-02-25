@@ -47,12 +47,16 @@ However, this code is not yet ready for production use. It is still in the early
 ### Usage
 
 Once the application is running, it will automatically start broadcasting discovery messages and listening for other instances on the local network.
-You should only run one instance of the application on each machine you'd like to keep synchronized.
+You should only run one instance of the application on each machine you'd like to keep synchronized. This application
+is designed to be platform-independent and should work on Windows, macOS, and Linux. Which means you can
+run it on multiple machines and have them all synchronized.
 
 When you copy text to the clipboard in one instance, it will automatically update the clipboard contents of all other instances. You can test this by copying text in one instance and then pasting it into another instance.
 
 
 ## Developer Notes
+
+Things to keep in mind : 
 
 - Each instance uses port 7878 for TCP connections.
 - Since we set the ip address to 0.0.0.0, it will listen to all the interfaces on the machine.
